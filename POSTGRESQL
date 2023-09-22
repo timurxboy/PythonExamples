@@ -1,3 +1,9 @@
+CREATE DATABASE имя_базыданных;
+
+CREATE USER имя_пользователя WITH PASSWORD 'пароль';
+
 GRANT USAGE, CREATE ON SCHEMA public TO имя_пользователя;
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO имя_пользователя;
 GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO имя_пользователя;
+
+GRANT ALL PRIVILEGES ON DATABASE имя_базыданных TO имя_пользователя;
